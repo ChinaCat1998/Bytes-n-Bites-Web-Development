@@ -55,6 +55,33 @@ main{
     margin-top: 1rem;
     text-align: center;
 }
+
+
+aside{
+    box-shadow: 10px 10px #371212;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 0;
+    text-align: left;
+    max-width: 350px;
+    padding:;
+   
+}
+aside h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 0px;
+    text-align: center;
+    background-color: #cc0000;
+    border: 2px solid #000000;
+    font-family: cursive;
+    font-size: 27px;
+}
+#rectangle{
+    border: 3px solid #371212;
+    width:350px;
+    height: 600px;
+    background:#fff2cc;
+}
 main h1{
     font-size: 60px;
     font-family: cursive;
