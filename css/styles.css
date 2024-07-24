@@ -56,9 +56,10 @@ main{
     text-align: center;
 }
 main h1{
-    font-size: 2rem;
+    font-size: 60px;
     font-family: cursive;
     color: #000000;
+    text-align: left;
 }
 footer{
     position: fixed;
