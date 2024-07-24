@@ -48,13 +48,18 @@ a{
 body{
     margin: 0 auto;
     padding: 0;
+    background-color: #fff2cc;
 }
 
 main{
     margin-top: 1rem;
     text-align: center;
 }
-
+main h1{
+    font-size: 2rem;
+    font-family: cursive;
+    color: #000000;
+}
 footer{
     position: fixed;
     bottom: 0;
