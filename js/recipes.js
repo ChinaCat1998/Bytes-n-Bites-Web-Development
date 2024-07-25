@@ -5,7 +5,7 @@ let recipe1 = [
     { name: "Baking Powder", amount: 2, unit: "tsp" },
     { name: "Salt", amount: 1 / 2, unit: "tsp" },
     { name: "Vegetable oil", amount: 1 / 4, unit: "cup" },
-    { name: "Egg, beaten", amount: 1, unit: "unit" },
+    { name: "Egg (beaten)", amount: 1, unit: "unit" },
     { name: "Milk", amount: 1 / 2, unit: "cup" },
     { name: "Chopped Apples", amount: 2, unit: "units" },
     { name: "Brown Sugar", amount: 1 / 2, unit: "cup" },
@@ -39,16 +39,16 @@ let recipe3 = [
 ]
 
 let recipe4 = [
-    { name: },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    { name: "Sweet Italian Sausage", amount: 1 / 2, unit: "lbs" },
+    { name: "Ground Beef", amount: 1 / 2, unit: "lbs" },
+    { name: "Chopped Garlic", amount: 1, unit: "clove" },
+    { name: "Chopped Parsley", amount: 1 / 2, unit: "cup" },
+    { name: "Egg (beaten)", amount: 1, unit: "unit" },
+    { name: "Bread Crumbs", amount: 1, unit: "cup" },
+    { name: "Salt", amount: 1 / 2, unit: "tsp" },
+    { name: "Pepper", amount: 1 / 4, unit: "tsp" },
+    { name: "Milk", amount: 1 / 2, unit: "cup" },
+    { name: "Vegetable Oil", amount: 1, unit: "tbsp" }
 ]
 
 let recipe5 = [
@@ -57,7 +57,7 @@ let recipe5 = [
     { name: "Salmon Fillets", amount: 4, unit: "units" },
     { name: "Melted Butter", amount: 1, unit: "tbsp" },
     { name: "Lemon", amount: 4, unit: "slices" },
-    { name: }
+    { name: "Brown Sugar (Top)", amount: 8, unit: "tsp" }
 ]
 
 let currentServings = 1; //Initialize current servings
