@@ -57,10 +57,17 @@ main{
     text-align: center;
 }
 main h1{
+    float: left;
     font-size: 60px;
-    font-family: cursive;
+    font-family:cursive;
     color: #000000;
     text-align: left;
+}
+img{
+    float: right;
+    padding-bottom: 40%;
+    width: 80%;
+    height: 100%;
 }
 footer{
     position: fixed;
