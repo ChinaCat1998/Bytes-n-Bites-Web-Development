@@ -19,14 +19,14 @@ function validate() {
 
 	if (name.length < 5) { 
 		errors.push("Please Enter a valid Name");} 
-	if (subject.length < 10) { 
+	if (subject.length < 5) { 
 		errors.push("Please Enter a Correct Subject");} 
 	if (isNaN(phone) || phone.length != 10) { 
 		errors.push("Please Enter a valid Phone Number");} 
 	if (email.indexOf("@") == -1 || email.length < 6) { 
 		errors.push( 
 			"Please Enter a valid Email");} 
-	if (message.length <= 40) { 
+	if (message.length <= 10) { 
 		errors.push( 
 			"Please Enter More Than 40 Characters");} 
 
