@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0 auto;
 }
-
 .header{
     padding: 0;
     margin: 0;
@@ -44,7 +43,12 @@ a{
     border:none;
     text-decoration: none;
 }
-
+h1{
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+    margin: 0 auto;
+}
 body{
     margin: 0 auto;
     padding: 0;
@@ -54,26 +58,6 @@ body{
 main{
     margin-top: 1rem;
     text-align: center;
-}
-
-
-aside{
-    box-shadow: 10px 10px #371212;
-    margin: 20px 0;
-    text-align: left;
-    max-width: 350px;
-    max-height: 500px;
-   
-}
-aside h2{
-    color: #fff;
-    font-size: 30px;
-    padding: 0px;
-    text-align: center;
-    background-color: #cc0000;
-    border: 1px solid #000000;
-    font-family: cursive;
-    font-size: 27px;
 }
 
 main h1{
@@ -90,66 +74,36 @@ footer{
     color: white;
     width: 100%;
     text-align: center;
+    height: 25px;
 }
-.rectangle{
-    border: 3px solid #371212;
-    width:350px;
-    height: 500px;
-    background:#fff2cc;
-    z-index: 2;
+section h1{
+    background-color: #ea9999;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
 }
-.square{
-    z-index: 3;
-    border:none;
-    background-color: #cc0000;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top:300px;
-    margin: 0 40px 0 40px;
-    align-items: center;
-}
-.square-2{
-    z-index: 4;
-    border:none;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top:325px;
-    margin: 0 65px 0 65px;
-    align-items: center;
-    justify-content: center;
-}
-.square-2 img{
-    width: 100%;
-    height: 100%;
-}
-.container{
+.card-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
+    margin: 0 20 0 20;
 }
-.container h1{
-  font-size: 30px;
-    font-family: cursive;
-    color: #000000;
-    text-align: left;
-    margin: 5 0 5 0;  
-    z-index:5;
-}
-.container li{
-    font-family: sans-serif;
-    list-style: none;
+.card-1, .card-2, .card-3{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: #ea9999;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-1 h2, .card-2 h2, .card-3 h2{
+    font-size: 30px;
+    color: #fff;
 }
