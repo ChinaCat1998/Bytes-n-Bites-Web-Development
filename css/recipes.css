@@ -77,10 +77,10 @@ footer{
     height: 25px;
 }
 section h1{
-    background-color: #ee8585;
+    background-color: #f7bbbb;
     text-align: center;
     font-size: 40px;
-    color: #fff;
+    color: #990000;
     padding: 10px;
     margin-top: 30px;
 }
@@ -104,17 +104,16 @@ section h1{
     gap: 10px;
     box-shadow: 5px 5px 0 #160303
 }
-.card-1 h2, .card-2 h2, .card-3 h2{
+.card-1 h1, .card-2 h1, .card-3 h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color: #fff;
+    color: #990000;
 }
 .card-1 img, .card-2 img, .card-3 img{
     display: flex;
     width: 250px;
     height: 250px;
-    border:#990000;
     border-radius: 10%;
 }
