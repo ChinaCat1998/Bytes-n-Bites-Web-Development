@@ -58,8 +58,26 @@ main{
 main h1{
     font-size: 60px;
     font-family: cursive;
-    color: #000000;
-    text-align: left;
+    color: #990000;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+.card1{
+   
+    height: 10%;
+    width: 30%;
+   margin-top: 5%;
+    background: #990000;
+    justify-content: center;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    margin-bottom: 10%;
+}
+.cards p{
+    color :white
 }
 footer{
     position: fixed;
