@@ -38,3 +38,5 @@ function validate() {
 		alert( 
 			"Form Submitted Successfully!"); 
 		return true;}}
+
+		//LOCAL / MODAL STORAGE NEEDED
