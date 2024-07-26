@@ -58,16 +58,60 @@ main{
 main h1{
     float: left;
     font-size: 60px;
-    font-family:cursive;
+    font-family: cursive;
     color: #000000;
     text-align: left;
 }
 img{
     float: right;
-    padding-bottom: 40%;
-    width: 80%;
-    height: 100%;
+  
+    width: 50%;
+    height: 50%;
+    padding-bottom: 10%;
 }
+.card{
+    margin-top: 11%;
+    border: #990000 7px solid;
+    
+    justify-content: center;
+    margin-left: 20px;
+    
+display: grid;
+        grid-template-rows: max-content 200px 1fr;
+  
+      
+   
+}
+.card h2{
+    font-size: 30px;
+    font-family: cursive;
+    background-color: #990000;
+    color: white;
+    margin-top: 10px;
+}
+
+.card img{
+    object-fit: cover;
+   
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.card button{
+
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+
+}
+
+
 footer{
     position: fixed;
     bottom: 0;
