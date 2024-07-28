@@ -1,0 +1,147 @@
+.playwrite-ca-allFont {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    color: black;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height: 4rem;
+    background-color: #990000;
+    list-style: none;
+    display: flex;
+}
+
+.nav ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.nav li{
+    margin: 0 auto;
+    font-size: 2rem;
+    color:white;
+    margin-inline: 4rem;
+    line-height: 4rem;
+    outline: none;
+}
+.nav ul p {
+    margin: 0 auto;
+    font-size: 2rem;
+    color:white;
+    margin-inline: 4rem;
+    line-height: 4rem;
+    outline: none;
+    font-family: cursive;
+}
+a{
+    color: white;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff2cc;
+    overflow: auto;
+}
+
+main{
+    margin-left:10%;
+    margin-top: 1rem;
+    
+}
+main h1{
+    float: left;
+    font-size: 60px;
+    font-family: cursive;
+    color: #000000;
+    text-align: left;
+}
+section h3 {
+    margin-left: 10%;
+    font-size: 30px;
+    color: #990000;
+    margin-top: 9%;
+}
+img{
+ object-fit: cover;
+    float: right;
+   width: 50%;
+    height: 100%;
+    padding-bottom: 10%;
+}
+.card{
+   
+    height: 10%;
+    width: 80%;
+   margin-top: 10%;
+    border: #990000 7px solid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    margin-bottom: 10%;
+  
+      }
+.card h2{
+    font-size: 30px;
+    font-family: cursive;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card img{
+    object-fit: cover;
+   width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.card button{
+
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 30%;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #990000;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.card ul li{
+    font-size: 15px;
+    font-family: cursive;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    
+}
