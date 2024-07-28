@@ -174,3 +174,10 @@ section h1{
     line-height: 0px;
     position: relative;
 }
+.card-2 h2, .card-3 h2, .card-4 h2, .card-5 h2, .card-6 h2{
+    display: flex;
+    color: #d70c0c;
+    font-size: 12Px;
+    line-height: 0px;
+    position: relative;
+}
