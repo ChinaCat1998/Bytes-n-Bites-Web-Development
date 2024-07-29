@@ -153,3 +153,10 @@ footer{
     width: 100%;
     text-align: center;
 }
+.cards {
+    background-color: #fff2cc;
+}
+.profile {
+    background-color: #fff2cc;
+    color:black
+}
