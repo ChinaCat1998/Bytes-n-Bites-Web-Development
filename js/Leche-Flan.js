@@ -3,7 +3,7 @@ const maxServings = 10; // Define the maximum number of servings to scale up to
 // Shows the ingredients for the recipe with their amount and unit of measurements.
 let recipe3 = [
   { name: "Sugar", amount: 1, unit: "cup" },
-  { name: "Water", amount: 3 / 4, unit: "cup" },
+  { name: "Water", amount: 0.75, unit: "cup" },
   { name: "Egg Yolks", amount: 12, unit: "units" },
   { name: "Evaporated Milk", amount: 12, unit: "ounces" },
   { name: "Sweetened Condensed Milk", amount: 14, unit: "ounces" },

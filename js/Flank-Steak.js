@@ -3,12 +3,12 @@ const maxServings = 10; // Define the maximum number of servings to scale up to
 // Shows the ingredients for the recipe with their amount and unit of measurements.
 let recipe2 = [
   { name: "Flank Steak", amount: 2, unit: "units" },
-  { name: "Soy Sauce", amount: 1 / 4, unit: "cups" },
+  { name: "Soy Sauce", amount: 0.25, unit: "cups" },
   { name: "Honey", amount: 3, unit: "tbsp" },
   { name: "Red Wine Vinegar", amount: 2, unit: "tbsp" },
-  { name: "Garlic Powder", amount: 3 / 2, unit: "tsp" },
-  { name: "Ground Ginger", amount: 3 / 2, unit: "tsp" },
-  { name: "Vegetable Oil", amount: 3 / 4, unit: "cup" },
+  { name: "Garlic Powder", amount: 1.5, unit: "tsp" },
+  { name: "Ground Ginger", amount: 1.5, unit: "tsp" },
+  { name: "Vegetable Oil", amount: 0.75, unit: "cup" },
   { name: "Green Onion", amount: 1, unit: "units" },
 ];
 

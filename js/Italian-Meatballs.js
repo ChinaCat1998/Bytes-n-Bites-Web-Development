@@ -2,15 +2,15 @@ let currentServings = 1; // Initialize current servings
 const maxServings = 10; // Define the maximum number of servings to scale up to
 // Shows the ingredients for the recipe with their amount and unit of measurements.
 let recipe4 = [
-  { name: "Sweet Italian Sausage", amount: 1 / 2, unit: "lbs" },
-  { name: "Ground Beef", amount: 1 / 2, unit: "lbs" },
+  { name: "Sweet Italian Sausage", amount: 0.5, unit: "lbs" },
+  { name: "Ground Beef", amount: 0.5, unit: "lbs" },
   { name: "Chopped Garlic", amount: 1, unit: "cloves" },
-  { name: "Chopped Parsley", amount: 1 / 2, unit: "cups" },
+  { name: "Chopped Parsley", amount: 0.5, unit: "cups" },
   { name: "Egg (beaten)", amount: 1, unit: "units" },
   { name: "Bread Crumbs", amount: 1, unit: "cups" },
-  { name: "Salt", amount: 1 / 2, unit: "tsp" },
-  { name: "Pepper", amount: 1 / 4, unit: "tsp" },
-  { name: "Milk", amount: 1 / 2, unit: "cups" },
+  { name: "Salt", amount: 0.5, unit: "tsp" },
+  { name: "Pepper", amount: 0.25, unit: "tsp" },
+  { name: "Milk", amount: 0.5, unit: "cups" },
   { name: "Vegetable Oil", amount: 1, unit: "tbsp" },
 ];
 

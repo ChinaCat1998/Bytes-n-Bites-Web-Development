@@ -2,22 +2,22 @@ let currentServings = 1; // Initialize current servings
 const maxServings = 10; // Define the maximum number of servings to scale up to
 
 const recipe1 = [
-    { name: "Sifted Flour", amount: 3 / 2, unit: "cups" },
+    { name: "Sifted Flour", amount: 1.5, unit: "cups" },
    { name: "Granulated Sugar", amount: 1, unit: "cups" },
    { name: "Baking Powder", amount: 2, unit: "tsp" },
-   { name: "Salt", amount: 1 / 2, unit: "tsp" },
-   { name: "Vegetable oil", amount: 1 / 4, unit: "cups" },
+   { name: "Salt", amount: 0.5, unit: "tsp" },
+   { name: "Vegetable oil", amount: 0.25, unit: "cups" },
    { name: "Egg (beaten)", amount: 1, unit: "unit" },
-   { name: "Milk", amount: 1 / 2, unit: "cups" },
+   { name: "Milk", amount: 0.5, unit: "cups" },
    { name: "Chopped Apples", amount: 2, unit: "units" },
-   { name: "Brown Sugar", amount: 1 / 2, unit: "cups" },
+   { name: "Brown Sugar", amount: 0.5, unit: "cups" },
    { name: "Topping Flour", amount: 2, unit: "tbsp" },
    { name: "Cinnamon", amount: 2, unit: "tbsp" },
    { name: "Butter", amount: 6, unit: "tbsp" },
    { name: "Chopped Walnuts", amount: 1, unit: "cups" },
-   { name: "Confectioners' Sugar", amount: 1 / 3, unit: "cups" },
-   { name: "Vanilla", amount: 1 / 4, unit: "tsp" },
-   { name: "Milk (glaze)", amount: 1 / 2, unit: "tsp" }
+   { name: "Confectioners' Sugar", amount: 0.33, unit: "cups" },
+   { name: "Vanilla", amount: 0.25, unit: "tsp" },
+   { name: "Milk (glaze)", amount: 0.5, unit: "tsp" }
 ];
 
 function scaleRecipe(newServings) {

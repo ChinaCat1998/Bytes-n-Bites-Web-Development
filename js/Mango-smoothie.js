@@ -7,7 +7,7 @@ let recipe6 = [
   { name: "Milk", amount: 1, unit: "cup" },
   { name: "Vanilla Yogurt", amount: 1, unit: "cup" },
   { name: "Vanilla", amount: 4, unit: "drops" },
-  { name: "Pineapple Juice", amount: 1 / 2, unit: "cup" },
+  { name: "Pineapple Juice", amount: 0.5, unit: "cup" },
   { name: "Honey", amount: null, unit: null },
 ];
 
