@@ -97,6 +97,13 @@ img{
     color: white;
     margin-top: 10px;
 }
+.card h3{
+    font-size: 20px;
+    font-family: cursive;
+    
+    color: #990000;
+    margin-top: 10%;
+}
 
 .card img{
     object-fit: cover;
