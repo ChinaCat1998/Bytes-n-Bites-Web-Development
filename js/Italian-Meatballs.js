@@ -4,13 +4,13 @@ const maxServings = 10; // Define the maximum number of servings to scale up to
 let recipe4 = [
   { name: "Sweet Italian Sausage", amount: 1 / 2, unit: "lbs" },
   { name: "Ground Beef", amount: 1 / 2, unit: "lbs" },
-  { name: "Chopped Garlic", amount: 1, unit: "clove" },
-  { name: "Chopped Parsley", amount: 1 / 2, unit: "cup" },
-  { name: "Egg (beaten)", amount: 1, unit: "unit" },
-  { name: "Bread Crumbs", amount: 1, unit: "cup" },
+  { name: "Chopped Garlic", amount: 1, unit: "cloves" },
+  { name: "Chopped Parsley", amount: 1 / 2, unit: "cups" },
+  { name: "Egg (beaten)", amount: 1, unit: "units" },
+  { name: "Bread Crumbs", amount: 1, unit: "cups" },
   { name: "Salt", amount: 1 / 2, unit: "tsp" },
   { name: "Pepper", amount: 1 / 4, unit: "tsp" },
-  { name: "Milk", amount: 1 / 2, unit: "cup" },
+  { name: "Milk", amount: 1 / 2, unit: "cups" },
   { name: "Vegetable Oil", amount: 1, unit: "tbsp" },
 ];
 
