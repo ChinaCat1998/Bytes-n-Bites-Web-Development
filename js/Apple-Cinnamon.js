@@ -42,9 +42,16 @@ function scaleRecipe(newServings) {
 };
 
 function displayRecipe(recipe1) {
-    //Logs the ingredients to the console
+    const listElement = document.getElementById('Ingredients-list');
+
+    // Clear the current list
+    listElement.innerHTML = '';
+
+    // Append each scaled ingredient to the list
     recipe1.forEach(ingredient => {
-        console.log(`${ingredient.amount.toFixed(1)} ${ingredient.unit} of ${ingredient.name}`);
+        const listItem = document.createElement('li');
+        listItem.textContent = `${ingredient.amount.toFixed(1)} ${ingredient.unit} of ${ingredient.name}`;
+        listElement.appendChild(listItem);
     });
 };
 
