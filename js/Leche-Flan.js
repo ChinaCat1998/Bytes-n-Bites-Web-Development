@@ -49,7 +49,7 @@ function displayRecipe(recipe) {
   // Populate the list with the scaled recipe
   recipe.forEach((ingredient) => {
     const listItem = document.createElement("li");
-    listItem.textContent = `${ingredient.amount} ${ingredient.units} ${ingredient.name}`;
+    listItem.textContent = `${ingredient.amount} ${ingredient.unit} ${ingredient.name}`;
     listElement.appendChild(listItem);
   });
 }
