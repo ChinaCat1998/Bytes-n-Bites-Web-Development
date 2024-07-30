@@ -22,22 +22,49 @@ let currentServings = 1; //Initialize current servings
 
 function scaleRecipe(newServings) {
     // Validate that currentServings is positive
-    if (currentServings <= 0) {
+    if (currentServings <= 0 || newServings <= 0) {
         console.error("Current servings must be greater than zero.");
-        return;
-    }
-    // Validate that newServings is positive
-    if (newServings <= 0) {
-        console.error("New servings must be greater than zero.");
         return;
     }
     // Calculate the scale factor for changing the amount of servings
     let scaleFactor = newServings / currentServings;
     // Scale the ingredients
-    let scaledRecipe = recipe1.map(ingredient => ({
+    return recipe1.map(ingredient => ({
         ...ingredient,
         amount: ingredient.amount * scaleFactor
     }));
-    // Return the scaled recipe
-    return scaledRecipe;
+    
 };
+
+function displayRecipe(recipe) {
+    // Get the list element
+    const listElement = document.getElementById('ingredients-list');
+
+    // Clear the current list
+    listElement.innerHTML = '';
+
+    // Append each ingredient to the list
+    recipe.forEach(ingredient => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${ingredient.amount.toFixed(2)} ${ingredient.unit} of ${ingredient.name}`;
+        listElement.appendChild(listItem);
+    });
+}
+
+function handleScale() {
+    // Get the new servings input value
+    const newServings = parseInt(document.getElementById('servingsInput').ariaValueMax, 10);
+
+    // Validate input
+    if (isNaN(newServings) || newServings <= 0) {
+        alert("Please enter a valid number of servings.");
+        return;
+    }
+
+    // Scale the recipe and display it
+    const scaledRecipe = scaleRecipe(newServings);
+    displayRecipe(scaledRecipe);
+
+    // Update current servings
+    currentServings = newServings;
+}
