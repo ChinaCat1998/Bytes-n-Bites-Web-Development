@@ -36,17 +36,22 @@ function scaleRecipe(newServings) {
     for (let i = 0; i < recipe1.length; i++) {
         recipe1[i].amount *= scaleFactor;
     }
-    // Update the current number of servings
-    currentServings = newServings;
 
     //Display the scaled recipe
     displayRecipe(recipe1);
 };
 
 function displayRecipe(recipe1) {
-    //Logs the ingredients to the console
+    const listElement = document.getElementById('Ingredients-list');
+
+    // Clear the current list
+    listElement.innerHTML = '';
+
+    // Append each scaled ingredient to the list
     recipe1.forEach(ingredient => {
-        console.log(`${ingredient.amount.toFixed(1)} ${ingredient.unit} of ${ingredient.name}`);
+        const listItem = document.createElement('li');
+        listItem.textContent = `${ingredient.amount.toFixed(1)} ${ingredient.unit} of ${ingredient.name}`;
+        listElement.appendChild(listItem);
     });
 };
 

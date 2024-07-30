@@ -28,8 +28,6 @@ function scaleRecipe(newServings) {
     for (let i = 0; i < recipe2.length; i++) {
         recipe2[i].amount *= scaleFactor;
     }
-    // Update the current number of servings
-    currentServings = newServings;
 
     //Display the scaled recipe
     displayRecipe(recipe2);
