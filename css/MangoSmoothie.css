@@ -1,3 +1,10 @@
+.playwrite-ca-allFont {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 *{
     box-sizing: border-box;
     color: black;
@@ -80,10 +87,11 @@ img{
 .card{
    
     height: 10%;
-    width: 30%;
-   margin-top: 5%;
+    width: 80%;
+   margin-top: 10%;
     border: #990000 7px solid;
     justify-content: center;
+    align-items: center;
     margin-left: 10%;
     display: grid;
     grid-template-rows: max-content 200px 1fr;
@@ -93,8 +101,7 @@ img{
 .card h2{
     font-size: 30px;
     font-family: cursive;
-    background-color: #990000;
-    color: white;
+    color: #000000;
     margin-top: 10px;
 }
 
@@ -111,9 +118,10 @@ img{
     color: white;
     border: none;
     padding: 10px;
+    margin-top: 30%;
     font-size: 20px;
     margin-bottom: 20px;
-margin-top: 50%;
+
 
 
 }
@@ -127,4 +135,12 @@ footer{
     color: white;
     width: 100%;
     text-align: center;
+}
+.card ul li{
+    font-size: 15px;
+    font-family: cursive;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    
 }
