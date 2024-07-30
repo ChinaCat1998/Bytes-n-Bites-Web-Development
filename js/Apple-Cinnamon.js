@@ -21,48 +21,23 @@ let recipe1 = [
 let currentServings = 1; //Initialize current servings
 
 function scaleRecipe(newServings) {
-    //Validate that currentServings is positive
+    // Validate that currentServings is positive
     if (currentServings <= 0) {
-        console.error("Current servings must be greater than zero.")
+        console.error("Current servings must be greater than zero.");
         return;
     }
-    //Calculate the scale factor for changing the amount of servings
+    // Validate that newServings is positive
+    if (newServings <= 0) {
+        console.error("New servings must be greater than zero.");
+        return;
+    }
+    // Calculate the scale factor for changing the amount of servings
     let scaleFactor = newServings / currentServings;
-    //Check if the scale factor is valid
-    if (scaleFactor <= 0) {
-        console.error("Invalid scale factor. Ensure newServings is a positive number.")
-    }
-    //Scale each ingredient
-    for (let i = 0; i < recipe1.length; i++) {
-        recipe1[i].amount *= scaleFactor;
-    }
-
-    //Display the scaled recipe
-    displayRecipe(recipe1);
-};
-
-function displayRecipe(recipe1) {
-    const listElement = document.getElementById('Ingredients-list');
-
-    // Clear the current list
-    listElement.innerHTML = '';
-
-    // Append each scaled ingredient to the list
-    recipe1.forEach(ingredient => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${ingredient.amount.toFixed(1)} ${ingredient.unit} of ${ingredient.name}`;
-        listElement.appendChild(listItem);
-    });
-};
-
-function handleScale() {
-    //Get the new servings input value from the HTML input element
-    let newServings = parseInt(document.getElementById('servingsInput').value);
-    //Validate input
-    if (isNaN(newServings) || newServings <= 0) {
-        alert("Please enter a valid number of servings.");
-        return;
-    }
-    //Scale the recipe
-    scaleRecipe(newServings);
+    // Scale the ingredients
+    let scaledRecipe = recipe1.map(ingredient => ({
+        ...ingredient,
+        amount: ingredient.amount * scaleFactor
+    }));
+    // Return the scaled recipe
+    return scaledRecipe;
 };
