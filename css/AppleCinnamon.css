@@ -103,6 +103,7 @@ img{
     font-family: cursive;
     color: #000000;
     margin-top: 10px;
+    margin-bottom:0;
 }
 
 .card img{
@@ -143,4 +144,9 @@ footer{
     margin-left: 20px;
     text-align: left;
     
+}
+.card ul{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
 }
