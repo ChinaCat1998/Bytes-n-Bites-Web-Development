@@ -18,7 +18,8 @@ let recipe1 = [
     { name: "Milk (glaze)", amount: 1 / 2, unit: "tsp" }
 ];
 
-let currentServings = 1; //Initialize current servings
+let currentServings = 1; // Initialize current servings
+const maxServings = 10; // Define the maximum number of servings to scale up to
 
 function scaleRecipe(newServings) {
     // Validate that currentServings is positive
@@ -33,8 +34,15 @@ function scaleRecipe(newServings) {
         ...ingredient,
         amount: ingredient.amount * scaleFactor
     }));
-    
+
 };
+
+for (let i = 1; i <= maxServings; i++) {
+    let scaledRecipe = scaleRecipe(i);
+    console.log(`Scaled recipe for ${i} servings:`, scaledRecipe);
+    // Update currentServings to the new value if needed
+    currentServings = i;
+}
 
 function displayRecipe(recipe) {
     // Get the list element
@@ -53,7 +61,7 @@ function displayRecipe(recipe) {
 
 function handleScale() {
     // Get the new servings input value
-    const newServings = parseInt(document.getElementById('servingsInput').ariaValueMax, 10);
+    const newServings = parseInt(document.getElementById('servingsInput').nodeValue, 10);
 
     // Validate input
     if (isNaN(newServings) || newServings <= 0) {
