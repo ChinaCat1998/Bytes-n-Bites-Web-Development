@@ -70,6 +70,7 @@ main h1{
     font-family: cursive;
     color: #000000;
     text-align: left;
+    max-width: 50%;
 }
 section h3 {
     margin-left: 10%;
@@ -80,8 +81,9 @@ section h3 {
 img{
  object-fit: cover;
     float: right;
-   width: 50%;
-    height: 100%;
+   width: 300px;
+    height: 300px;
+    padding-right: 40px;
     padding-bottom: 10%;
 }
 .card{
@@ -102,8 +104,10 @@ img{
     font-size: 30px;
     font-family: cursive;
     color: #000000;
-    margin-top: 10px;
-    margin-bottom:0;
+    margin-top: 0;
+    margin: bottom 0;
+    padding-right: 600px;
+    border-bottom: 1px solid #990000;
 }
 
 .card img{
@@ -137,16 +141,24 @@ footer{
     width: 100%;
     text-align: center;
 }
+.card ul{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
 .card ul li{
     font-size: 15px;
     font-family: cursive;
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
+    padding-left: 50px;
     
 }
-.card ul{
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
+
+.card h3{
+    color: #990000;
+    font-size: 30px;
+    margin-top: 0%;
+    text-align: center;
 }
