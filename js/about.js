@@ -1,3 +1,3 @@
-document.getElementById('back-button').addEventListener('click', function() {
+document.getElementById('card-button').addEventListener('click', function() {
     window.history.back();
 });
