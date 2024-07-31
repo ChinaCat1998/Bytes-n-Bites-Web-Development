@@ -19,14 +19,14 @@ let recipe1 = [
 ];
 
 let recipe2 = [
-    { name: "Flank Steak", amount: 2, unit: units },
-    { name: "Soy Sauce", amount: 1 / 4, unit: cup },
+    { name: "Flank Steak", amount: 2, unit: "units" },
+    { name: "Soy Sauce", amount: 1 / 4, unit: "cup" },
     { name: "Honey", amount: 3, unit: "tbsp" },
-    { name: "Red Wine Vinegar", amount: 2, unit: tbsp },
-    { name: "Garlic Powder", amount: 3 / 2, unit: tsp },
-    { name: "Ground Ginger", amount: 3 / 2, unit: tsp },
-    { name: "Vegetable Oil", amount: 3 / 4, unit: cup },
-    { name: "Green Onion", amount: 1, unit: unit }
+    { name: "Red Wine Vinegar", amount: 2, unit: "tbsp" },
+    { name: "Garlic Powder", amount: 3 / 2, unit: "tsp" },
+    { name: "Ground Ginger", amount: 3 / 2, unit: "tsp" },
+    { name: "Vegetable Oil", amount: 3 / 4, unit: "cup" },
+    { name: "Green Onion", amount: 1, unit: "units" }
 ];
 
 let recipe3 = [
@@ -35,7 +35,7 @@ let recipe3 = [
     { name: "Egg Yolks", amount: 12, unit: "units" },
     { name: "Evaporated Milk", amount: 12, unit: "ounces" },
     { name: "Sweetened Condensed Milk", amount: 14, unit: "ounces" },
-    { name: "Vanilla", amount: 1, unit: tbsp }
+    { name: "Vanilla", amount: 1, unit: "tbsp" }
 ];
 
 let recipe4 = [
@@ -79,3 +79,29 @@ recipe6.forEach(ingredient => {
 
 //Display the updated recipe
 console.log(recipe6);
+
+const recipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6];
+
+const UserInput = document.querySelector("#UserInput");
+
+searchButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  const user = {
+    if (UserInput ==="flour","sugar","baking powder","salt","vegetable oil","egg","milk","apples","brown sugar","cinnamon","butter","walnuts","confectioners' sugar","vanilla","milk (glaze)") {
+        console.log("Apple-Cinnamon");
+        }else if (UserInput === "flank steak","soy sauce","honey","red wine vinegar","garlic powder","ground ginger","vegetable oil","green onion") {
+        console.log("Flank-Steak");
+        }else if (UserInput === "sugar","water","egg yolks","evaporated milk","sweetened condensed milk","vanilla") {
+        console.log("Leche Flan");
+        }else if (UserInput === "sweet italian sausage","ground beef","chopped garlic","chopped parsley","egg","bread crumbs","salt","pepper","milk","vegetable oil") {
+        console.log("Italian-Meatballs");
+        }else if (UserInput === "lemon juice","brown sugar","salmon fillets","melted butter","lemon","brown sugar (top)") {
+        console.log("Salmon-Fillets");
+        }else if (UserInput === "banana","mango","milk","vanilla yogurt","vanilla","pineapple juice","honey") {
+        console.log("Mango-Smoothie");
+  };
+
+  // set new submission to local storage
+  localStorage.setItem("user", JSON.stringify(user));
+});
