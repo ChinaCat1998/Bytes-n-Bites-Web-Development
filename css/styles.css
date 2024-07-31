@@ -78,18 +78,21 @@ img{
     padding-bottom: 10%;
 }
 .card{
-   
+   display:flex;
     height: 10%;
     width: 30%;
-   margin-top: 5%;
-    border: #990000 7px solid;
+    margin-top: 5%;
     justify-content: center;
     margin-left: 10%;
     display: grid;
     grid-template-rows: max-content 200px 1fr;
     margin-bottom: 10%;
-  
-      }
+    background-color: #faf2d8;
+    box-shadow: 5px 5px 0 #160303;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
 .card h2{
     font-size: 30px;
     font-family: cursive;
@@ -122,7 +125,7 @@ img{
 
 
 .card h4{
-    color: #990000;
+    color: #d70c0c;
     font-size: 16px;
     margin-top: 0%;
     text-align: center;
