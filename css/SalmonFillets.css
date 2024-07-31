@@ -99,16 +99,18 @@ img{
     margin-bottom: 10%;
     padding: 20px;
     box-sizing: border-box;
-    overflow: wrap;
+    word-wrap: break-word;
 }
 .card h2{
     font-size: 30px;
     font-family: cursive;
     color: #000000;
-    border-bottom: 1px solid #990000;
-    max-width: 100%;
+    margin-top: 0;
+    margin: bottom 0;
+    padding-right: 40%;
+    margin-left: 0;
     text-align: left;
-    padding-right: 600px;
+    border-bottom: 1px solid #990000;
 }
 
 .card img{
@@ -161,20 +163,4 @@ footer{
     font-size: 30px;
     margin-top: 0%;
     text-align: center;
-    padding-left: 160px;
-}
-/*.ingredients h2{
-    display: flex;
-    font-family: cursive;
-    color: #000000;
-    margin-top: 0;
-    margin: bottom 0;
-    border-bottom: 1px solid #990000;
-}
-.ingredients ul{
-    display: flex;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-    padding-bottom: 30px;
 }

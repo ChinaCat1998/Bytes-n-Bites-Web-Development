@@ -99,7 +99,7 @@ img{
     margin-bottom: 10%;
     padding: 20px;
     box-sizing: border-box;
-    overflow: wrap;
+    word-wrap: break-word;
 }
 .card h2{
     font-size: 30px;
@@ -107,7 +107,9 @@ img{
     color: #000000;
     margin-top: 0;
     margin: bottom 0;
-    padding-right: 600px;
+    padding-right: 40%;
+    margin-left: 0;
+    text-align: left;
     border-bottom: 1px solid #990000;
 }
 
@@ -161,53 +163,4 @@ footer{
     font-size: 30px;
     margin-top: 0%;
     text-align: center;
-    padding-left: 160px;
-}
-.ingredients h4{
-  font-size: 30px;
-    font-family: cursive;
-    color: #000000;
-    margin-top: 0;
-    margin: bottom 0;
-    padding-right: 600px;
-    border-bottom: 1px solid #990000;
-    padding-top: 150px;
-    text-align: left;
-    padding-right:700px;
-}
-.ingredients h2{
-    font-size: 30px;
-    font-family: cursive;
-    color: #000000;
-    margin-top: 0;
-    margin: bottom 0;
-    padding-right: 600px;
-    border-bottom: 1px solid #990000;
-}
-.ingredients ul{
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
-    
-}
-.instructions h4{
-    font-size: 30px;
-    font-family: cursive;
-    color: #000000;
-    margin-top: 0;
-    margin: bottom 0;
-    padding-right: 600px;
-    border-bottom: 1px solid #990000;
-    padding-top: 150px;
-    text-align: left;
-    padding-right:700px;
-}
-.instructions h2{
-    font-size: 30px;
-    font-family: cursive;
-    color: #000000;
-    margin-top: 0;
-    margin: bottom 0;
-    padding-right: 600px;
-    border-bottom: 1px solid #990000;
 }

@@ -99,7 +99,7 @@ img{
     margin-bottom: 10%;
     padding: 20px;
     box-sizing: border-box;
-    overflow: wrap;
+    word-wrap:break-word
 }
 .card h2{
     font-size: 30px;
