@@ -3,6 +3,7 @@ const maxServings = 10; // Define the maximum number of servings to scale up to
 
 const recipe1 = [
    { name: "Sifted Flour", amount: 1.5, unit: "cups" },
+   { name: "Sifted Flour", amount: 1.5, unit: "cups" },
    { name: "Granulated Sugar", amount: 1, unit: "cups" },
    { name: "Baking Powder", amount: 2, unit: "tsp" },
    { name: "Salt", amount: 0.5, unit: "tsp" },
@@ -39,8 +40,8 @@ function handleScale() {
   // Get the new servings input value from the HTML input element
   let newServings = parseInt(document.getElementById("servingsInput").value);
   // Validate input
-  if (isNaN(newServings) || newServings <= 0) {
-    alert("Please enter a valid number of servings.");
+  if (isNaN(newServings) || newServings <= 0 || newServings > maxServings) {
+    alert("Please enter a valid number of servings between 1 and 10.");
     return;
   }
   // Scale the recipe

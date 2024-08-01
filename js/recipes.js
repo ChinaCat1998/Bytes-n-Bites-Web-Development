@@ -109,33 +109,33 @@ const searchButton = document.querySelector("#Recipe");
 searchButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-// Retrieve input value
-const userInput = userInputElement.value;
+// Retrieve input value AND convert it to lowercase
+const userInput = userInputElement.value.toLowerCase();
 
 // Define arrays for each ingredient
 const appleCinnamonIngredients = [
     "flour", "granulated sugar", "baking powder", "salt", "vegetable oil", "egg", "milk", "apples", "brown sugar", "cinnamon butter", "walnuts", "powdered sugar", "vanilla", "milk (glaze)"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 const flankSteakIngredients = [
     "flank steak", "soy sauce", "honey", "red wine vinegar", "garlic powder", "ground ginger", "vegetable oil", "green onion"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 const lecheFlanIngredients = [
     "sugar", "water", "egg yolks", "evaporated milk", "sweetened condensed milk", "vanilla"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 const italianMeatballsIngredients = [
     "sweet italian sausage", "ground beef", "chopped garlic", "chopped parsley", "egg", "bread crumbs", "salt", "pepper", "milk", "vegetable oil"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 const salmonFilletsIngredients = [
     "lemon juice", "brown sugar", "salmon fillets", "melted butter", "lemon", "brown sugar (top)"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 const mangoSmoothie = [
     "banana", "mango", "milk", "vanilla yogurt", "vanilla", "pineapple juice", "honey"
-];
+].map(ingredient => ingredient.toLowerCase());
 
 // Check if userInput is in any of the ingredient lists
 if (appleCinnamonIngredients.includes(userInput)) {
