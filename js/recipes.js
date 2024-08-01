@@ -93,11 +93,11 @@ const recipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6];
 const userInputElement = document.querySelector("#UserInput");
 const searchButton = document.querySelector("#Recipe");
 
-searchButton.addEventListener("click", function (event) {
+searchButton.addEventListener("click", function(event) {
     event.preventDefault();
 
 // Retrieve input value AND convert it to lowercase
-const userInput = userInputElement.value.toLowerCase();
+const userInput = userInputElement.value.trim().toLowerCase();
 
 // Define arrays for each ingredient
 const appleCinnamonIngredients = [
@@ -137,11 +137,11 @@ if (appleCinnamonIngredients.includes(userInput)) {
     console.log("salmon-fillets");
 } else if (mangoSmoothie.includes(userInput)) {
     console.log("mango-smoothie");
-} else {
+} else if (userInput) { // Check if userInput is not empty before logging "No recipe found"
     console.log("No recipe found");
 }
 
 // set new submission to local storage
-localStorage.setItem("user", JSON.stringify(user));
+localStorage.setItem("user", JSON.stringify(userInput));
 
 });
