@@ -11,17 +11,7 @@
     <script src="./js/recipes.js" defer></script>
 </head>
 <body>
-    <div class="form-container">
-        <form class="form">
-            <input id="'search" type="text" class="input" placeholder="search..."/>
-            <button id="clear" class="clear-results">clear</button>
-        </form>
-</div>
-<div class="results-container">
-    <ul class="results-list" id="list">
-    </ul>
-</div>
-<script src="./js/recipes.js"></script>
+    
     <header class="header">
         <nav class="nav">
             <ul>
@@ -33,6 +23,12 @@
             </ul>
         </nav>
     </header>
+    <div class="scale-recipe">
+        <input type="number" id="servingsInput" placeholder="Enter Desired Servings">
+        <button onclick="handleScale()">Scale Recipe</button>
+        <button id="back-button">Back</button>
+        
+    </div>
       <main>
         <h1>Recipes</h1>
         <p>Browse our selection of recipes to find what best suits your appetite! With our interactive search option, you can type in ingredients and find something to make without a hassle!</p>
