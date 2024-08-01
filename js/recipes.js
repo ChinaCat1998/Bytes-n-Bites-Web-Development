@@ -87,19 +87,20 @@ const UserInput = document.querySelector("#UserInput");
 searchButton.addEventListener("click", function (event) {
   event.preventDefault();
 
-  const user = {
+  const user = UserInput.value.trim();{
     if (UserInput ==="flour","sugar","baking powder","salt","vegetable oil","egg","milk","apples","brown sugar","cinnamon","butter","walnuts","confectioners' sugar","vanilla","milk (glaze)") {
-        console.log("Apple-Cinnamon");
+        console.log [recipe1];
         }else if (UserInput === "flank steak","soy sauce","honey","red wine vinegar","garlic powder","ground ginger","vegetable oil","green onion") {
-        console.log("Flank-Steak");
+        console.log[recipe2];
         }else if (UserInput === "sugar","water","egg yolks","evaporated milk","sweetened condensed milk","vanilla") {
-        console.log("Leche Flan");
+        console.log[recipe3];
         }else if (UserInput === "sweet italian sausage","ground beef","chopped garlic","chopped parsley","egg","bread crumbs","salt","pepper","milk","vegetable oil") {
-        console.log("Italian-Meatballs");
+        console.log();
         }else if (UserInput === "lemon juice","brown sugar","salmon fillets","melted butter","lemon","brown sugar (top)") {
         console.log("Salmon-Fillets");
         }else if (UserInput === "banana","mango","milk","vanilla yogurt","vanilla","pineapple juice","honey") {
         console.log("Mango-Smoothie");
+        return;
   };
 
   // set new submission to local storage
