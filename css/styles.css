@@ -36,7 +36,7 @@
     margin-inline: 4rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
 }
 a{
     color: white;
@@ -60,7 +60,7 @@ main{
 main h1{
     float: left;
     font-size: 60px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #000000;
     text-align: left;
 }
@@ -95,14 +95,14 @@ img{
 
 .card h2{
     font-size: 30px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #990000;
     margin-top: 10px;
     text-align: center;
 }
 .card h3{
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #990000;
     margin-top: 10%;
     text-align: center;
