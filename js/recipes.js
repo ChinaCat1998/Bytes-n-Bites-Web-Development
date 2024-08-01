@@ -4,7 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
       window.history.back();
     });
   });
-  
+//   function handleScale() {
+//     const servingsInput = document.getElementById('servingsInput');
+//     const servings = Number(servingsInput.value);
+
+//     if (isNaN(servings) || servings < 0) {
+//         alert('Please enter a valid non-negative number.');
+//         servingsInput.value = ''; // Clear the input field
+//         return;
+//     }
+
+//     // Proceed with scaling the recipe
+//     // Your code here to scale the recipe based on the servings value
+//     alert(`Scaling recipe to ${servings} servings.`);
+// }
 
 // Shows the ingredients for the recipe with their amount and unit of measurements.
 let recipe1 = [
