@@ -86,27 +86,29 @@ img{
     padding-right: 40px;
     padding-bottom: 10%;
 }
-.card{
-   
-    height: 10%;
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 80%;
-   margin-top: 10%;
+    margin-top: 10%;
     border: #990000 7px solid;
     justify-content: center;
     align-items: center;
     margin-left: 10%;
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
     margin-bottom: 10%;
-  
-      }
+    padding: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
 .card h2{
     font-size: 30px;
     font-family: cursive;
     color: #000000;
     margin-top: 0;
-    margin: bottom 0;
+    margin-bottom: 20px;
     padding-right: 600px;
+    padding-top: 30px;
     border-bottom: 1px solid #990000;
 }
 
@@ -123,7 +125,6 @@ img{
     color: white;
     border: none;
     padding: 10px;
-    margin-top: 30%;
     font-size: 20px;
     margin-bottom: 20px;
 
@@ -145,14 +146,16 @@ footer{
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
+    padding-bottom: 55px;
+    padding-top: 40px;
 }
 .card ul li{
     font-size: 15px;
     font-family: cursive;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 20px;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 50px;;
     
 }
 
@@ -160,4 +163,6 @@ footer{
     color: #990000;
     font-size: 30px;
     margin-top: 0%;
+    text-align: center;
+    padding-left: 160px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Cinnamon</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/AppleCinnamon.css">
 </head>
 
@@ -31,8 +31,16 @@
             <section class="card">
                 <h3>CAUTION: CONTAINS NUTS, MILK, AND EGGS</h3>
                 <h2>Ingredients</h2>
-                <ul id="ingredients-list">
-                    <!--Scaled ingredients will be inserted here-->
+                <ul>
+                    <li>1 1/2 cups sifted flour</li>
+                    <li>1 cup granulated sugar</li>
+                    <li>2 tsp. baking powder</li>
+                    <li>1/2 tsp. salt</li>
+                    <li>1/4 cup vegetable oil</li>
+                    <li>1 egg, beaten</li>
+                    <li>1/2 cup milk</li>
+                    <li>2 chopped apples</li>
+                </ul>
                     <h2>Instructions</h2>
                     <br>
                     <ul>
@@ -78,8 +86,10 @@
                     </ul>
                     <br>
                     <br>
-                    <input type="number" id="'servingsInput" placeholder="Enter servings">
-                    <button onclick="handleScale()">Update Recipe</button>
+                    <label for="servingsInput"></label>
+                    <input type="number" id="servingsInput" placeholder="Enter number of servings">
+                    <button onclick="handleScale()">Scale Recipe</button>
+                    <ul id="ingredients-list"></ul>
                     <script src="./js/Apple-Cinnamon.js"></script>
                     <p>Credited to:
                         https://www.cooks.com/recipe/qn4cm4vs/apple-cinnamon-walnut-coffee-cake.html?k=rl6m6lqx </p>

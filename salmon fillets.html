@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmon Fillets</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/SalmonFillets.css">
 </head>
 <body>
@@ -25,6 +25,7 @@
         <img src="https://healthyrecipesblogs.com/wp-content/uploads/2024/07/baked-salmon-1-new.jpg" alt="Salmon Fillets">
         <section class="card">
         <h3>CAUTION: CONTAINS FISH</h3>
+        <section class="ingredients">
         <h2>Ingredients</h2>
         <ul>
             <li>2 tbsp. lemon juice</li>
@@ -34,6 +35,8 @@
             <li>4 thin slices lemon</li>
             <li>8 tsp. brown sugar</li>
         </ul>
+        </section>
+        <section class="instructions">
         <h2>Instructions</h2>
         <ul>
             <li>Heat oven to 375°F.</li>
@@ -45,8 +48,14 @@
 <li>Bake until fish flakes easily with fork, 15 to 20 minutes longer. Serve with juices from dish.</li>
 <li>Enjoy!</li>
         </ul>
+        </section>
         <br>
         <br>
+              <label for="servingsInput"></label>
+                    <input type="number" id="servingsInput" placeholder="Enter number of servings">
+                    <button onclick="handleScale()">Scale Recipe</button>
+                    <ul id="ingredients-list"></ul>
+                    <script src="./js/Salmon-Fillets.js"></script>
 <p> Credited to: https://www.cooks.com/recipe/yw9152zb/baked-salmon-fillets.html</p>
 </section>
 </section>
