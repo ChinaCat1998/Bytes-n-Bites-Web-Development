@@ -37,6 +37,18 @@ function validate() {
 	else { 
 		alert( 
 			"Form Submitted Successfully!"); 
-		return true;}}
+		return true;
+		 // Save data to localStorage
+		 
+		 localStorage.setItem('formData', JSON.stringify({
+			name: name,
+			subject: subject,
+			phone: phone,
+			email: email,
+			message: message
+		  }));
+		  showModal(name, subject, phone, email, message);
 
-		//LOCAL / MODAL STORAGE NEEDED
+    return false;
+}
+}
