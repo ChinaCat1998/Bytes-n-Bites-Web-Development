@@ -96,7 +96,7 @@ const searchButton = document.querySelector("#Recipe");
 searchButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-// Retrieve input value
+// Retrieve input value AND conv
 const userInput = userInputElement.value;
 
 // Define arrays for each ingredient
@@ -126,7 +126,7 @@ const mangoSmoothie = [
 
 // Check if userInput is in any of the ingredient lists
 if (appleCinnamonIngredients.includes(userInput)) {
-    console.log("Apple-Cinnamon");
+    console.log("Apple-Cinnamon") || ;
 } else if (flankSteakIngredients.includes(userInput)) {
     console.log("flank-steak");
 } else if (lecheFlanIngredients.includes(userInput)) {
