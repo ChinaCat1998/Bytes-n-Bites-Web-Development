@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
    // Back to Card Button
-    document.getElementById('card-button').addEventListener('click', function() {
+    document.getElementById('back-button').addEventListener('click', function() {
       window.history.back();
     });
   });
