@@ -103,6 +103,8 @@ console.log(recipe6);
 
 const recipes = [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6];
 
+//-----LOWERCASE FUNCTION FOR SEARCH BAR BELOW--------
+
 const userInputElement = document.querySelector("#UserInput");
 const searchButton = document.querySelector("#Recipe");
 
