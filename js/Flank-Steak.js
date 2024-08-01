@@ -54,3 +54,10 @@ function displayRecipe(recipe) {
     listElement.appendChild(listItem);
   });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // Back to Card Button
+   document.getElementById('back-button').addEventListener('click', function() {
+     window.history.back();
+   });
+ });
+ 
