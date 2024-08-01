@@ -150,7 +150,7 @@ footer{
     margin-bottom: 0;
     padding-left: 0%;
     padding-right: 650px;
-
+    word-wrap: break-word;
     border-bottom: 1px solid #990000;
     padding-top: 10px;
 }
@@ -159,6 +159,7 @@ footer{
     margin-left: 20px;
     text-align: left;
     padding-bottom: 10px;
+    word-wrap: break-word;
 }
 .instructions h2{
     font-size: 30px;
@@ -169,12 +170,14 @@ footer{
     padding-right: 600px;
     border-bottom: 1px solid #990000;
     padding-top: 10px;
+    word-wrap: break-word;
 }
 .instructions ul{
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
     padding-bottom: 0px;
+    word-wrap: break-word;
 }
 
 .card h3{
