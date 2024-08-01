@@ -11,7 +11,9 @@
     padding: 0;
     margin: 0 auto;
 }
-
+#back-button{
+    float: right;
+}
 .header{
     padding: 0;
     margin: 0;

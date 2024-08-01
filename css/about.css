@@ -122,13 +122,14 @@ section{
     font-size: 15px;
 
 }
-.card-button{
+#card-button{
     background-color: #990000;
     color: white;
     border: none;
     padding: 10px;
     font-size: 10px;
     margin-bottom: 20px;
+    
 }
 
 footer{
