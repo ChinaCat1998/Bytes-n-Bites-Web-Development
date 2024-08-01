@@ -24,7 +24,7 @@ function scaleRecipe(newServings) {
   // Calculate the scale factor for changing the amount of servings
   let scaleFactor = newServings / currentServings;
   // Scale the ingredients
-  return recipe5.map((ingredient) => ({
+  return recipe4.map((ingredient) => ({
     ...ingredient,
     amount: ingredient.amount * scaleFactor,
   }));

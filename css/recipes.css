@@ -5,6 +5,10 @@
     padding: 0;
     margin: 0 auto;
 }
+#back-button{
+    float: right;
+}
+
 .scale-recipes{
     display: flex;
     justify-content: center;
@@ -43,12 +47,12 @@
 }
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: 'Playwrite CA';
+    font-family: "Playwrite CA";
 }
 a{
     color: white;
@@ -78,6 +82,7 @@ main h1{
     font-family: "Playwrite CA";
     color: #000000;
     text-align: left;
+    padding-bottom: 15px;
 }
 footer{
     position: fixed;
