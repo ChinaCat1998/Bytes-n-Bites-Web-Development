@@ -126,6 +126,7 @@ img{
     padding: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    margin-top: 0%;
 
 
 
@@ -141,19 +142,39 @@ footer{
     width: 100%;
     text-align: center;
 }
-.card ul{
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
+.ingredients h2{
+    font-size: 30px;
+    font-family: "Playwrite CA";
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0%;
+    padding-right: 650px;
+
+    border-bottom: 1px solid #990000;
+    padding-top: 10px;
 }
-.card ul li{
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.ingredients ul{
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
-    padding-left: 50px;
-    
+    padding-bottom: 10px;
+}
+.instructions h2{
+    font-size: 30px;
+    font-family: "Playwrite CA";
+    color: #000000;
+    margin-top: 0;
+    margin: bottom 0;
+    padding-right: 600px;
+    border-bottom: 1px solid #990000;
+    padding-top: 10px;
+}
+.instructions ul{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    padding-bottom: 0px;
 }
 
 .card h3{

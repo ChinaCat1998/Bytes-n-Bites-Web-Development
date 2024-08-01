@@ -82,6 +82,7 @@ main h1{
     font-family: "Playwrite CA";
     color: #000000;
     text-align: left;
+    padding-bottom: 15px;
 }
 footer{
     position: fixed;
