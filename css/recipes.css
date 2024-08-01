@@ -11,6 +11,18 @@
     padding: 0;
     margin: 0 auto;
 }
+.scale-recipes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+ 
+}
+#card-button{
+    float: right;
+    
+}
+
 .header{
     padding: 0;
     margin: 0;

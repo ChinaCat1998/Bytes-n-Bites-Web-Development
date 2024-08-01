@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+   // Back to Card Button
+    document.getElementById('card-button').addEventListener('click', function() {
+      window.history.back();
+    });
+  });
+  
+
 // Shows the ingredients for the recipe with their amount and unit of measurements.
 let recipe1 = [
     { name: "Sifted Flour", amount: 3 / 2, unit: "cups" },
