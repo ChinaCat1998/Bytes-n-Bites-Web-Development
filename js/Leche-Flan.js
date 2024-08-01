@@ -7,7 +7,7 @@ let recipe3 = [
   { name: "Egg Yolks", amount: 12, unit: "units" },
   { name: "Evaporated Milk", amount: 12, unit: "ounces" },
   { name: "Sweetened Condensed Milk", amount: 14, unit: "ounces" },
-  { name: "Vanilla", amount: 1, unit: tbsp },
+  { name: "Vanilla", amount: 1, unit: "tbsp" },
 ];
 
 
@@ -89,5 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.history.back();
   });
 });
- 
- 
+
+
