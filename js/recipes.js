@@ -82,8 +82,7 @@ let recipe6 = [
 recipe6.forEach(ingredient => {
     if (ingredient.name === "Honey") {
         ingredient.amount = ", to taste";
-    }
-});
+    // Remove the closing curly brace
 
 //Display the updated recipe
 console.log(recipe6);
@@ -122,28 +121,32 @@ const salmonFilletsIngredients = [
     "lemon juice", "brown sugar", "salmon fillets", "melted butter", "lemon", "brown sugar (top)"
 ].map(ingredient => ingredient.toLowerCase());
 
-const mangoSmoothie = [
+const mangoSmoothieIngredients = [
     "banana", "mango", "milk", "vanilla yogurt", "vanilla", "pineapple juice", "honey"
 ].map(ingredient => ingredient.toLowerCase());
 
 // Check if userInput is in any of the ingredient lists
 if (appleCinnamonIngredients.includes(userInput)) {
     console.log("Apple-Cinnamon");
+    return window.location.href = "apple-cinnamon.html";
 } else if (flankSteakIngredients.includes(userInput)) {
     console.log("flank-steak");
+    return window.location.href = "flank-steak.html";
 } else if (lecheFlanIngredients.includes(userInput)) {
     console.log("leche-flan");
+    return window.location.href = "leche-flan.html";
 } else if (italianMeatballsIngredients.includes(userInput)) {
     console.log("italian-meatballs");
+    return window.location.href = "italian-meatballs.html";
 } else if (salmonFilletsIngredients.includes(userInput)) {
     console.log("salmon-fillets");
-} else if (mangoSmoothie.includes(userInput)) {
+    return window.location.href = "salmon-fillets.html";
+} else if (mangoSmoothieIngredients.includes(userInput)) {
     console.log("mango-smoothie");
-} else if (userInput) { // Check if userInput is not empty before logging "No recipe found"
+    return window.location.href = "mango-smoothie.html";
+} else if (userInput === "") {
     console.log("No recipe found");
-}
-
-// set new submission to local storage
-localStorage.setItem("user", JSON.stringify(userInput));
-
-});
+    alert("No recipe found");
+    localStorage.setItem("user", JSON.stringify(userInput));
+    return window.location.href = "recipes.html";
+})
