@@ -146,7 +146,102 @@ if (appleCinnamonIngredients.includes(userInput)) {
     return window.location.href = "mango-smoothie.html";
 } else if (userInput === "") {
     console.log("No recipe found");
-    alert("No recipe found");
-    localStorage.setItem("user", JSON.stringify(userInput));
-    return window.location.href = "recipes.html";
-})
+}
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get the modal
+        const modal = document.getElementById("myModal");
+        // Get the button that opens the modal
+        const btn = document.getElementById("searchModal");
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+        // Get the div to display search results
+        const searchResultsDiv = document.getElementById("searchResults");
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Handle search
+        const userInputElement = document.querySelector("#UserInput");
+        const searchButton = document.querySelector("#Recipe");
+
+        searchButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Retrieve input value AND convert it to lowercase
+            const userInput = userInputElement.value.trim().toLowerCase();
+
+            let results = '';
+
+            // Define arrays for each ingredient
+            const appleCinnamonIngredients = [
+                "flour", "granulated sugar", "baking powder", "salt", "vegetable oil", "egg", "milk", "apples", "brown sugar", "cinnamon butter", "walnuts", "powdered sugar", "vanilla", "milk (glaze)"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            const flankSteakIngredients = [
+                "flank steak", "soy sauce", "honey", "red wine vinegar", "garlic powder", "ground ginger", "vegetable oil", "green onion"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            const lecheFlanIngredients = [
+                "sugar", "water", "egg yolks", "evaporated milk", "sweetened condensed milk", "vanilla"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            const italianMeatballsIngredients = [
+                "sweet italian sausage", "ground beef", "chopped garlic", "chopped parsley", "egg", "bread crumbs", "salt", "pepper", "milk", "vegetable oil"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            const salmonFilletsIngredients = [
+                "lemon juice", "brown sugar", "salmon fillets", "melted butter", "lemon", "brown sugar (top)"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            const mangoSmoothie = [
+                "banana", "mango", "milk", "vanilla yogurt", "vanilla", "pineapple juice", "honey"
+            ].map(ingredient => ingredient.toLowerCase());
+
+            // Check if userInput is in any of the ingredient lists
+            if (appleCinnamonIngredients.includes(userInput)) {
+                results = "Apple-Cinnamon";
+            } else if (flankSteakIngredients.includes(userInput)) {
+                results = "Flank Steak";
+            } else if (lecheFlanIngredients.includes(userInput)) {
+                results = "Leche Flan";
+            } else if (italianMeatballsIngredients.includes(userInput)) {
+                results = "Italian Meatballs";
+            } else if (salmonFilletsIngredients.includes(userInput)) {
+                results = "Salmon Fillets";
+            } else if (mangoSmoothie.includes(userInput)) {
+                results = "Mango Smoothie";
+            } else if (userInput) { // Check if userInput is not empty before logging "No recipe found"
+                results = "No recipe found";
+            }
+
+            // Display the result in the modal
+            searchResultsDiv.innerHTML = results;
+
+            // Open the modal
+            modal.style.display = "block";
+
+            // Save to local storage
+            localStorage.setItem("user", JSON.stringify(userInput));
+        });
+    });
+
+
+// set new submission to local storage
+localStorage.setItem("user", JSON.stringify(userInput));
+
+});

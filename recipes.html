@@ -30,7 +30,16 @@
     </header>
       <main>
         <input type="text" id="searchInput" placeholder="Search for an ingredient">
-        <button id="searchButton">Search</button>
+        <button id="searchModal">Search</button>
+        <!--Will trigger modal after "Search" is clicked-->
+        <div id="myModal" class="modal">
+            <!--Modal content-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Search Results</p>
+                <div id="searchResults"></div>
+            </div>
+        </div>
         <button id="back-button">Back</button>
         <br>
         <h1>Recipes</h1>
