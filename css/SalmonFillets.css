@@ -1,9 +1,4 @@
-.playwrite-ca-allFont {
-  font-family: "Playwrite CA", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
+
 
 *{
     box-sizing: border-box;
@@ -42,13 +37,14 @@
 }
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
 }
+
 a{
     color: white;
     outline: none;
@@ -71,7 +67,7 @@ main{
 main h1{
     float: left;
     font-size: 60px;
-    font-family: cursive;
+    font-family: "playwrite CA";
     color: #000000;
     text-align: left;
     max-width: 50%;
@@ -107,11 +103,11 @@ img{
 }
 .card h2{
     font-size: 30px;
-    font-family: cursive;
+    font-family: "playwrite CA";
     color: #000000;
     margin-top: 0;
     margin: bottom 0;
-    padding-right: 40%;
+    padding-right: 20%;
     margin-left: 0;
     text-align: left;
     border-bottom: 1px solid #990000;
@@ -132,6 +128,7 @@ img{
     padding: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    margin-top:0;
 
 
 
@@ -154,7 +151,7 @@ footer{
 }
 .card ul li{
     font-size: 15px;
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
@@ -167,4 +164,11 @@ footer{
     font-size: 30px;
     margin-top: 0%;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ingredients h2+ul{
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: left;
+    padding-right:600px;
 }

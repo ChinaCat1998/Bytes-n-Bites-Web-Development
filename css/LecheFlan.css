@@ -1,10 +1,3 @@
-.playwrite-ca-allFont {
-  font-family: "Playwrite CA", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 *{
     box-sizing: border-box;
     color: black;
@@ -41,13 +34,15 @@
 }
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
+
 }
+
 a{
     color: white;
     outline: none;
@@ -70,7 +65,7 @@ main{
 main h1{
     float: left;
     font-size: 60px;
-    font-family: cursive;
+    font-family: "playwrite CA";
     color: #000000;
     text-align: left;
     max-width: 50%;
@@ -106,7 +101,7 @@ img{
 }
 .card h2{
     font-size: 30px;
-    font-family: cursive;
+    font-family: "playwrite CA";
     color: #000000;
     margin-top: 0;
     margin: bottom 0;
@@ -131,6 +126,7 @@ img{
     padding: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    margin-top: 0%;
 
 
 
@@ -146,19 +142,42 @@ footer{
     width: 100%;
     text-align: center;
 }
-.card ul{
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
+.ingredients h2{
+    font-size: 30px;
+    font-family: "Playwrite CA";
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0%;
+    padding-right: 650px;
+    word-wrap: break-word;
+    border-bottom: 1px solid #990000;
+    padding-top: 10px;
 }
-.card ul li{
-    font-size: 15px;
-    font-family: cursive;
+.ingredients ul{
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
-    padding-left: 50px;
-    
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}
+.instructions h2{
+    font-size: 30px;
+    font-family: "Playwrite CA";
+    color: #000000;
+    margin-top: 0;
+    margin: bottom 0;
+    padding-right: 600px;
+    border-bottom: 1px solid #990000;
+    padding-top: 10px;
+    word-wrap: break-word;
+}
+.instructions ul{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    padding-bottom: 0px;
+    word-wrap: break-word;
 }
 
 .card h3{

@@ -1,15 +1,11 @@
-.playwrite-ca-allFont {
-  font-family: "Playwrite CA", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 *{
     box-sizing: border-box;
     color: black;
     padding: 0;
     margin: 0 auto;
+}
+#back-button{
+    float: right;
 }
 
 
@@ -37,15 +33,17 @@
     line-height: 4rem;
     outline: none;
 }
+
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
 }
+
 a{
     color: white;
     outline: none;
@@ -63,12 +61,14 @@ main{
     margin-top: 1rem;
     text-align: center;
 }
+
 main h1{
     font-size: 60px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #990000;
     text-align: center;
 }
+
 section{
     margin-top: 20px;
  margin-left: 8%;
@@ -105,6 +105,7 @@ section{
     text-align: center;
     background-color: #f1f1f1;
   }
+
 .card img{
     width:100%;
     height: 50%;
@@ -122,6 +123,7 @@ section{
     font-size: 15px;
 
 }
+
 #card-button{
     background-color: #990000;
     color: white;
@@ -140,4 +142,12 @@ footer{
     color: white;
     width: 100%;
     text-align: center;
+}
+
+.about-info h1{
+    font-size: 60px;
+    font-family: "Playwrite CA";
+    color: #990000;
+    text-align: center;
+    padding-bottom:10px;
 }

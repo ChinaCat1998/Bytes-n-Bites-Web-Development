@@ -1,10 +1,3 @@
-.playwrite-ca-allFont {
-  font-family: "Playwrite CA", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 *{
     box-sizing: border-box;
     color: black;
@@ -14,6 +7,8 @@
 #back-button{
     float: right;
 }
+
+
 .header{
     padding: 0;
     margin: 0;
@@ -40,12 +35,12 @@
 }
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
 }
 a{
     color: white;
@@ -69,7 +64,7 @@ main{
 main h1{
     float: left;
     font-size: 60px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #000000;
     text-align: left;
     max-width: 50%;
@@ -105,12 +100,12 @@ img{
 }
 .card h2{
     font-size: 30px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #000000;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 10px;
-    padding-right: 600px;
+    padding-right: 60%;
     border-bottom: 1px solid #990000;
 }
 
@@ -129,7 +124,7 @@ img{
     border: none;
     padding: 10px;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-top:0;
 
 
 
@@ -152,7 +147,7 @@ footer{
 }
 .card ul li{
     font-size: 15px;
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 0px;
     margin-left: 20px;
     text-align: left;

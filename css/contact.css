@@ -1,16 +1,13 @@
-.playwrite-ca-allFont {
-  font-family: "Playwrite CA", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 *{
     box-sizing: border-box;
     color: black;
     padding: 0;
     margin: 0 auto;
 }
+#back-button{
+    float: right;
+}
+
 
 .header{
     padding: 0;
@@ -38,12 +35,12 @@
 }
 .nav ul p {
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     line-height: 4rem;
     outline: none;
-    font-family: cursive;
+    font-family: "Playwrite CA";
 }
 a{
     color: white;
@@ -64,7 +61,7 @@ main{
 }
 main h1{
     font-size: 60px;
-    font-family: cursive;
+    font-family: "Playwrite CA";
     color: #000000;
     text-align: left;
 }

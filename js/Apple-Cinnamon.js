@@ -2,7 +2,8 @@ let currentServings = 1; // Initialize current servings
 const maxServings = 10; // Define the maximum number of servings to scale up to
 
 const recipe1 = [
-    { name: "Sifted Flour", amount: 1.5, unit: "cups" },
+   { name: "Sifted Flour", amount: 1.5, unit: "cups" },
+   { name: "Sifted Flour", amount: 1.5, unit: "cups" },
    { name: "Granulated Sugar", amount: 1, unit: "cups" },
    { name: "Baking Powder", amount: 2, unit: "tsp" },
    { name: "Salt", amount: 0.5, unit: "tsp" },
@@ -21,9 +22,9 @@ const recipe1 = [
 ];
 
 function scaleRecipe(newServings) {
-  // Validate that currentServings is positive
+  // Validate that newServings is positive
   if (currentServings <= 0 || newServings <= 0) {
-    console.error("Current servings must be greater than zero.");
+    console.error("Current servings and new servings must be greater than zero.");
     return;
   }
   // Calculate the scale factor for changing the amount of servings
@@ -39,15 +40,40 @@ function handleScale() {
   // Get the new servings input value from the HTML input element
   let newServings = parseInt(document.getElementById("servingsInput").value);
   // Validate input
-  if (isNaN(newServings) || newServings <= 0) {
-    alert("Please enter a valid number of servings.");
+  if (isNaN(newServings) || newServings <= 0 || newServings > maxServings) {
+    alert("Please enter a valid number of servings between 1 and 10.");
     return;
   }
   // Scale the recipe
   let scaledRecipe = scaleRecipe(newServings);
-  displayRecipe(scaledRecipe);
-  // Update currentServings to the new value
-  currentServings = newServings;
+  if (scaledRecipe) { // Only display recipe if scaling was successful
+    displayRecipe(scaledRecipe);
+    // Update currentServings to the new value
+    currentServings = newServings;
+  }
+}
+
+function decimalToFraction(decimal) {
+  const tolerance = 1e-6;
+  let numerator = 1;
+  let denominator = 1;
+
+  while (Math.abs(decimal - numerator / denominator) > tolerance) {
+    if (numerator / denominator < decimal) {
+      numerator++;
+    } else {
+      denominator++;
+      numerator = Math.round(decimal * denominator);
+    }
+  }
+
+  // Simplify the fraction
+  const gcd = (a, b) => {
+    return b === 0 ? a : gcd(b, a % b);
+  };
+  const divisor = gcd(numerator, denominator);
+
+  return `${numerator / divisor}/${denominator / divisor}`;
 }
 
 function displayRecipe(recipe) {
@@ -58,14 +84,19 @@ function displayRecipe(recipe) {
   // Populate the list with the scaled recipe
   recipe.forEach((ingredient) => {
     const listItem = document.createElement("li");
-    listItem.textContent = `${ingredient.amount} ${ingredient.unit} ${ingredient.name}`;
+    // Format amount as fraction if it's a decimal, otherwise as a whole number
+    const formattedAmount = Number.isInteger(ingredient.amount)
+      ? ingredient.amount
+      : decimalToFraction(ingredient.amount);
+    listItem.textContent = `${formattedAmount} ${ingredient.unit} ${ingredient.name}`;
     listElement.appendChild(listItem);
   });
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   // Back to Card Button
-   document.getElementById('back-button').addEventListener('click', function() {
-     window.history.back();
-   });
- });
+  document.getElementById('back-button').addEventListener('click', function () {
+    window.history.back();
+  });
+});
  
