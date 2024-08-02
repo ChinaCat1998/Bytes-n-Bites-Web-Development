@@ -25,14 +25,15 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <button id="back-button">Back</button>
-    </div>
     <main>
+        <input type="text" id="searchInput" placeholder="Search for an ingredient">
+        <button id="searchButton">Search</button>
+        <button id="back-button">Back</button>
         <h1>Italian Sausage Meatballs</h1>
         <section class="card-container">
         <img src="https://lakegenevacountrymeats.com/wp-content/uploads/ItalianSausageMeatballsAndSpaghetti.jpg" alt="Italian Meatballs">
         <section class="card">
+        <h3>CAUTION: CONTAINS DAIRY</h3>
         <h2>Ingredients</h2>
         <ul>
             <li>1/2 lb sweet Italian sausage, bulk</li>
@@ -59,7 +60,7 @@
                     <input type="number" id="servingsInput" placeholder="Enter number of servings">
                     <button onclick="handleScale()">Scale Recipe</button>
                     <ul id="ingredients-list"></ul>
-                    <script src="./js/Italian-Meatballs.js"></script>
+                    
 <p> Credited to: https://www.cooks.com/recipe/li18j0fg/italian-sausage-meatballs.html?k=rbdwqjlx</p>
 </section>
 </section>
@@ -67,6 +68,8 @@
     <footer>
         Made By Group 1 <br>&copy; 2024 All rights reserved.
     </footer>
+    <script src="./js/Italian-Meatballs.js"></script>
+    <script src="./js/recipes.js"></script>
 </body>
 
 </html>
